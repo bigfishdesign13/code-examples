@@ -1,0 +1,345 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+body {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	}
+main {
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+	}
+
+.custom-content .center {
+	text-align: center !important;
+	}
+
+.custom-content {
+	padding: 10px 0 0 0;
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		}
+	.pod {
+		position: relative;
+		box-sizing: border-box;
+		flex: 1;
+		margin: 0 0 16px;
+
+		&.full {
+			flex: 0 100%;
+			}
+		
+		h4 {
+			margin: 0;
+			text-align: left;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 21px;
+			color: #231A6F;
+			}
+		ul {
+			padding-left: 20px;
+			text-align: left;
+
+			&.reduced { 
+				li {
+					font-size: 12px;
+					line-height: 19px;
+					}
+				}
+			}
+		}
+	.pod-interior {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		margin: 0 8px;
+		padding: 20px;
+		height: 100%;
+
+		&.has-title {
+			height: 88%;
+			}
+		&.spacious {
+			padding: 10px 10px;
+			}
+		&.extraspacious {
+			margin: 0;
+			padding: 10px 0;
+			}
+		&.kill-top {
+			padding-top: 0;
+			}
+		&.allow-actions {
+			padding-bottom: 90px;
+			}
+		&.allow-button {
+			padding-bottom: 50px;
+			}
+		&.locked {
+			height: auto;
+			min-height: 310px;
+			}
+		&.auto-height {
+			height: auto;
+			}
+		
+		&.cta {
+			border-radius: 0 0 5px 5px;
+			border-top: 5px solid #240f6e;
+			background: #FFF;
+			-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+			-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+			box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+
+			&.translucent {
+				background: rgba(255, 255, 255, 0.9);
+				}
+			&.basic {
+				border-radius: 5px;
+				border: 1px solid #e0e0e0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				}
+			&.no-shadow {
+				border-left: 1px solid #e0e0e0;
+				border-right: 1px solid #e0e0e0;
+				border-bottom: 1px solid #e0e0e0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				}
+			&.block {
+				border-radius: 0;
+				border: 0;
+				background: #eff2f5;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				}
+			}
+		}
+	.cta-header {
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 25px;
+		text-align: center;
+		color: #240F6E;
+		}
+	.uniform-header {
+		min-height: 190px;
+		}
+	.orb {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -16px;
+		margin-left: -16px;
+		width: 32px;
+		height: 32px;
+		background: #eee;
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 32px;
+		border-radius: 16px;
+		}
+	.actions {
+		box-sizing: border-box;
+		position: absolute;
+		bottom: 0;
+		left: 10px;
+		right: 10px;
+		}
+	
+	a {
+		text-decoration: none;
+		}
+	h1 {
+		margin: 10px 0;
+		color: #333;
+		font-size: 24px;
+		font-weight: 400;
+		font-size: 27px;
+		line-height: 31px;
+		}
+	h2 {
+		margin: 0 0 20px !important;
+		padding: 0 !important;
+		color: #333;
+		font-size: 15px;
+		}
+		h2.hilite {
+			font-size: 24px;
+			line-height: 29px;
+			}
+	h3 {
+		margin: 10px 0;
+		}
+	p {
+		font-size: 13px;
+		line-height: 20px;
+		text-align: inherit !important;
+		color: #333;
+
+		&.intro {
+			margin: 20px auto 40px;
+			max-width: 800px;
+			font-size: 15px;
+			line-height: 21px;
+			text-align: center !important;
+			}
+
+		&.jumbo {
+			font-size: 27px;
+			font-weight: 700;
+			line-height: 34px;
+			text-align: center;
+			}
+		&.lurid {
+			margin: 15px 0;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 36px;
+			text-align: center;
+			}
+		&.pretitle {
+			margin-top: 5px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #CCC;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 18px;
+			}
+		&.posttitle {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 300px;
+			font-size: 13px;
+			line-height: 18px;
+			}
+		}
+	}
+		
+	
+
+/* DEAULT BUTTONS */
+.custom-content a.default-button {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f5f5f5), color-stop(1, #d5d5d5)) !important;
+	background:-moz-linear-gradient(top, #f5f5f5 5%, #d5d5d5 100%) !important;
+	background:-webkit-linear-gradient(top, #f5f5f5 5%, #d5d5d5 100%) !important;
+	background:-o-linear-gradient(top, #f5f5f5 5%, #d5d5d5 100%) !important;
+	background:-ms-linear-gradient(top, #f5f5f5 5%, #d5d5d5 100%) !important;
+	background:linear-gradient(to bottom, #f5f5f5 5%, #d5d5d5 100%) !important;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5", endColorstr="#d5d5d5",GradientType=0) !important;
+	background-color:#f5f5f5;
+	border-radius: 4px;
+	border: 1px solid #bbbbbb;
+	
+	display: inline-block;
+	box-sizing: border-box;
+	padding:0 20px;
+	width: 120px;
+	min-width: 100px;
+	color:#333;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+	text-decoration:none;
+	cursor:pointer;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+	&.transparent {
+		padding: 0 5px;
+		background: transparent !important;
+		filter: none;
+		border-radius: 0;
+		border: 0;
+		color: #240f6e;
+		}
+	&.special {
+		background: #5f43c3 !important;
+		background: -moz-linear-gradient(top, #5f43c3 0%, #240f6e 100%) !important;
+		background: -webkit-linear-gradient(top, #5f43c3 0%,#240f6e 100%) !important;
+		background: linear-gradient(to bottom, #5f43c3 0%,#240f6e 100%) !important;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#5f43c3", endColorstr="#240f6e",GradientType=0 ) !important;
+		border: 1px solid #333;
+
+		width: auto !important;
+		min-width: 100%;
+		line-height: 40px;
+		color: #fff;
+		font-size: 19px;
+
+		&:hover {
+			border: 1px solid #000;
+			opacity: 0.85;
+			}
+		&.low-profile {
+			font-size: 15px;
+			line-height: 30px;
+			}
+		}
+	&.full {
+		width: 100%;
+		}
+	&.center {
+		display: block;
+		margin: auto;
+		max-width: 200px;
+		}
+	&.breathe {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		}
+	&:hover {
+		border-color: #999;
+		}
+	&.small {
+		padding: 0 12px;
+		min-width: 70px;
+		line-height: 22px;
+		font-size: 11px;
+		}
+	&[disabled] {
+		opacity: 0.5;
+		cursor: default;
+		}
+	}
+
+@media (max-width: 720px) {
+	.custom-content {
+		padding: 10px 10px 0;
+
+		.pod {
+			flex-basis: 100%;
+			text-align: center;
+			}
+		.pod-interior {
+			margin: 0;
+			min-height: 1px;
+
+			&.locked {
+				min-height: 0;
+				}
+			}
+		h2.interior-title,
+		.pod-interior.has-title {
+			height: auto;
+			}
+		h2, h3, p {
+			text-align: center;
+			}
+		p.jumbo {
+			margin: 0 0 20px;
+			}
+		}
+	}
