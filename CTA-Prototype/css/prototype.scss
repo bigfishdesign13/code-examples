@@ -1,0 +1,148 @@
+@import "_vars";
+@import "_mixins";
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+
+body {
+	padding: 0;
+	font: 15px/21px 'Montserrat', sans-serif;
+}
+
+main {
+	margin: auto;
+	width: 100%;
+	max-width: 1366px;
+}
+header {
+	text-align: center;
+}
+.row {
+	display: flex;
+
+	@include breakpoint(between) {
+		flex-wrap: wrap;
+		};
+}
+
+.pod {
+	position: relative;
+	box-sizing: border-box;
+	flex: 1 0;
+
+	@include breakpoint(between) {
+		flex-basis: 50%;
+		padding-bottom: 20px;
+		};
+	@include breakpoint(phone) {
+		flex-basis: 100%;
+		};
+
+	.interior {
+		box-sizing: border-box;
+		margin: 10px;
+		padding: 20px 20px 0;
+		height: 100%;
+		border: 1px solid $color-border;
+		border-top: 5px solid $color-primary;
+		border-radius: 0 0 5px 5px;
+		background: #fff;
+		transition: all 250ms ease;
+
+		&:hover {
+			-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.4);
+			-moz-box-shadow: 0 0 8px 0 rgba(0,0,0,.4);
+			box-shadow: 0 0 8px 0 rgba(0,0,0,.4);
+
+			@include breakpoint(between) {
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				};
+			}
+
+		.icn {
+			display: block;
+			margin: 12px 0;
+			height: 80px;
+			background: url(../img/cta-prototype-sprite.png) no-repeat center 0;
+
+			&.fmn {
+				background-position: center -80px;
+				}
+			&.fll {
+				background-position: center -155px;
+				}
+			&.webinars {
+				background-position: center -880px;
+				}
+			}
+	}
+}
+
+button {
+	padding: 20px;
+	width: 100%;
+	border: 0;
+	background: $color-primary;
+	font-size: 21px;
+	line-height: 21px;
+	color: #fff;
+	cursor: pointer;
+	transition: background $transition-speed $transition-ease;
+
+	&.transparent {
+		background: transparent !important;
+		color: $color-secondary;
+		font-size: 15px;
+		line-height: 15px;
+		text-decoration: underline;
+		}
+	&:hover {
+		// opacity: .85;
+		background: $color-secondary;
+		}
+}
+
+
+// TYPOGRAPHY
+h1 {
+	margin: 20px 0;
+	font-size: 27px;
+	font-weight: 400;
+}
+h2 {
+	margin: 0 0 10px;
+	font-size: 21px;
+	line-height: 27px;
+	text-align: center;
+
+	@include breakpoint(tablet) {
+		font-size: 18px;
+		line-height: 24px;
+		};
+}
+p {
+	text-align: center;
+
+	@include breakpoint(tablet) {
+		font-size: 13px;
+		line-height: 19px;
+		};
+}
+
+// GENERAL
+.grow {
+	transform: translateZ(0);
+	transition: transform $transition-speed $transition-ease;
+
+	&:hover {
+		transform: scale(1.01);
+
+		@include breakpoint(between) {
+			transform: scale(1.0);
+			};
+		}
+	}

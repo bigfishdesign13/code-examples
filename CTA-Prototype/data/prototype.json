@@ -1,0 +1,19 @@
+{
+	"CTAs": [
+		{
+			"title":"Financial Management Network", 
+			"blurb":"Stay informed of the latest accounting and finance news, updates, and regulatory changes.", 
+			"icon":"fmn"
+		},
+		{
+			"title":"Financial Learning Library", 
+			"blurb":"Behavioral skills and ethics are just as important to today's CPAs as technical skills.", 
+			"icon":"fll"
+		},
+		{
+			"title":"CPE Webinars", 
+			"blurb":"Gain insights from content experts presenting the latest hot topics and relevant industry updates.", 
+			"icon":"webinars"
+		}
+	]
+}
