@@ -47,15 +47,19 @@ class CTA {
         blurb.innerHTML = this.blurb;
         interior.appendChild(blurb);
 
+        let buttons = document.createElement('div');
+        buttons.className = 'buttons';
+        interior.appendChild(buttons);
+
         let button1 = document.createElement('button');
         // blurb.className = 'icn ' + this.icon;
         button1.innerHTML = 'VIEW LIBRARY';
-        interior.appendChild(button1);
+        buttons.appendChild(button1);
 
         let button2 = document.createElement('button');
         button2.className = 'transparent';
         button2.innerHTML = 'Latest Releases';
-        interior.appendChild(button2);
+        buttons.appendChild(button2);
     }
 }
 

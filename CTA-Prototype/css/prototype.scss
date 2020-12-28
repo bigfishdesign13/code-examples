@@ -41,9 +41,10 @@ header {
 		};
 
 	.interior {
+		position: relative;
 		box-sizing: border-box;
 		margin: 10px;
-		padding: 20px 20px 0;
+		padding: 20px 20px 120px;
 		height: 100%;
 		border: 1px solid $color-border;
 		border-top: 5px solid $color-primary;
@@ -79,10 +80,19 @@ header {
 				background-position: center -880px;
 				}
 			}
+		
+		.buttons {
+			box-sizing: border-box;
+			position: absolute;
+			bottom: 10px;
+			left: 20px;
+			right: 20px;
+			}
 	}
 }
 
 button {
+	box-sizing: border-box;
 	padding: 20px;
 	width: 100%;
 	border: 0;
